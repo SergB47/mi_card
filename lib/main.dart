@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(
@@ -22,12 +23,17 @@ class MyApp extends StatelessWidget {
               ),
               Text(
                 'FName LName',
-                style: TextStyle(
-                  fontFamily: 'Pacifico',
-                  fontSize: 40.0,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold
+                style: GoogleFonts.bangers(textStyle: TextStyle(
+                  color: Colors.white, 
+                  letterSpacing: .5,
+                  fontSize: 40.0
+                  )),
                 ),
+                Text('Flutter Developer',
+                style: GoogleFonts.abrilFatface(textStyle: TextStyle(
+                  color: Colors.teal.shade200,
+                  fontSize: 20.0
+                )),
                 )
             ],
           ), 
