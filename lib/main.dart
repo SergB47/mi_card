@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal[700],
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 radius: 50.0,
@@ -35,46 +36,46 @@ class MyApp extends StatelessWidget {
                   color: Colors.teal.shade200,
                   fontSize: 20.0
                 )),
-              ), 
-              Container(
+              ),
+              SizedBox(
+                height: 20.0,
+                width: 150.0,
+                child: Divider(
+                  color: Colors.teal.shade400),
+              ),
+              Card(
                 color: Colors.white,
-                padding: EdgeInsets.all(10),
                 margin: EdgeInsets.symmetric(vertical:10, horizontal: 25),
-                child: Row(children: <Widget>[
-                  Icon(
+                child: ListTile(
+                  leading: Icon(
                     Icons.phone,
                     color: Colors.teal.shade400,
                   ),
-                  SizedBox( 
-                    width: 10,
-                  ),
-                  Text(
+                  title:Text(
                     '+7 111 333 22 22',
                     style: GoogleFonts.abrilFatface(textStyle: TextStyle(
                       color: Colors.teal.shade400
-                    )),
+                      )
+                    ),
                   )
-                ],),
+                ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
-                padding: EdgeInsets.all(10),
                 margin: EdgeInsets.symmetric(vertical:10, horizontal: 25),
-                child: Row(children: <Widget>[
-                  Icon(
+                child: ListTile(
+                  leading: Icon(
                     Icons.email,
                     color: Colors.teal.shade400,
                   ),
-                  SizedBox( 
-                    width: 10,
-                  ),
-                  Text(
-                    'lname@email.com',
+                  title:Text(
+                    'flname@email.com',
                     style: GoogleFonts.abrilFatface(textStyle: TextStyle(
                       color: Colors.teal.shade400
-                    )),
+                      )
+                    ),
                   )
-                ],),
+                ),
               )
             ],
           ), 
